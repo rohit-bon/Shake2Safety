@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "683264443871",
+    "project_id": "shake2safety-78723",
+    "storage_bucket": "shake2safety-78723.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683264443871:android:74c33dac864e2482f0706a",
+        "android_client_info": {
+          "package_name": "com.women.shake2safety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683264443871-lkig5pp1kea0i35rkrs9nhbeqiris6qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2IHjKVzDJZbtycCGpNO09pB20lwkrREQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683264443871-lkig5pp1kea0i35rkrs9nhbeqiris6qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
