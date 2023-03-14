@@ -54,7 +54,7 @@ class AboutUs extends StatelessWidget {
             sizeFactor: 1.8,
           ),
           AboutCard(
-            asset: "gdsc",
+            asset: "dev",
             desc: "",
             subtitle: "Devfolio Hackvengers - Parul University",
             title: "Hackvengers",
@@ -64,7 +64,7 @@ class AboutUs extends StatelessWidget {
             asset: "logo",
             desc:
                 """@Rohit Bongade, @Heri Patel""",
-            subtitle: "Made with ❤️ for Us!",
+            subtitle: "KISS: Keep it Shake & Safe",
             title: "Shake 2 Safety Team",
             sizeFactor: 3,
           ),

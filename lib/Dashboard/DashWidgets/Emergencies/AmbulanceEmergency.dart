@@ -51,7 +51,10 @@ class AmbulanceEmergency extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
                         "Ambulance",
                         style: TextStyle(
                             color: font1Color,
@@ -61,14 +64,16 @@ class AmbulanceEmergency extends StatelessWidget {
                       Text(
                         "In case of any medical emergency call",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: font1Color,
                           fontSize: MediaQuery.of(context).size.width * 0.025,
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),
+                        ],
+                      ),
                       Container(
                         height: 25,
-                        width: 100,
+                        width: 80,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(300)),

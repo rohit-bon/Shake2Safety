@@ -36,7 +36,7 @@ class _SplashState extends State<Splash> {
             Align(
                 alignment: Alignment.center,
                 child: Lottie.asset('assets/safety.json',
-                    height: MediaQuery.of(context).size.width * 1.2)),
+                    height: MediaQuery.of(context).size.width * 0.7)),
             Align(
               alignment: Alignment.topCenter,
               child: Padding(

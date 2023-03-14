@@ -51,7 +51,10 @@ class ArmyEmergency extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
                         "NCW",
                         style: TextStyle(
                             color: font1Color,
@@ -65,6 +68,8 @@ class ArmyEmergency extends StatelessWidget {
                             fontSize:
                                 MediaQuery.of(context).size.width * 0.025),
                         overflow: TextOverflow.ellipsis,
+                      ),
+                        ],
                       ),
                       Container(
                         height: 25,

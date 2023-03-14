@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:location/location.dart';
 import 'package:permission_handler/permission_handler.dart' as appPermissions;
 import 'package:pinput/pin_put/pin_put.dart';
+import 'package:shake2safety/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sms_maintained/sms.dart' as smsSender;
 import 'package:shake2safety/Dashboard/ContactScreens/phonebook_view.dart';
@@ -67,7 +68,7 @@ class _DashboardState extends State<Dashboard> {
               ),
             )
           : FloatingActionButton(
-              backgroundColor: Color(0xFFFB9580),
+              backgroundColor: mainColor,
               onPressed: () async {
                 if (alerted) {
                   int pin = (prefs.getInt('pin') ?? -1111);

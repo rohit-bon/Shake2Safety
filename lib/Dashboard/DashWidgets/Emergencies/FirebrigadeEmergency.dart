@@ -51,7 +51,10 @@ class FireEmergency extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
                           "Fire Brigade",
                           style: TextStyle(
                               color: font1Color,
@@ -66,6 +69,8 @@ class FireEmergency extends StatelessWidget {
                               fontSize:
                                   MediaQuery.of(context).size.width * 0.025),
                           overflow: TextOverflow.ellipsis,
+                        ),
+                          ],
                         ),
                         Container(
                           height: 20,
