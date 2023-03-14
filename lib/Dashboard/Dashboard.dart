@@ -57,15 +57,16 @@ class _DashboardState extends State<Dashboard> {
       backgroundColor: Color(0xFFFAFCFE),
       floatingActionButton: currentPage == 1
           ? FloatingActionButton(
-              backgroundColor: Colors.white,
+              backgroundColor: mainColor,
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => PhoneBook()));
               },
-              child: Image.asset(
-                "assets/add-contact.png",
-                height: 60,
-              ),
+              child: SizedBox(height: 60, child: Icon(Icons.person_add_alt, size: 30, color: secondaryColor,)),
+              // child: Image.asset(
+              //   "assets/add-contact.png",
+              //   height: 60,
+              // ),
             )
           : FloatingActionButton(
               backgroundColor: mainColor,
@@ -114,10 +115,12 @@ class _DashboardState extends State<Dashboard> {
                         currentPage = 0;
                       });
                   },
-                  child: Image.asset(
-                    "assets/home.png",
-                    height: 28,
-                  )),
+                  // child: Image.asset(
+                  //   "assets/home.png",
+                  //   height: 28,
+                  // )
+                  child: Icon(Icons.home, color: mainColor, size: 35,),
+                  ),
               InkWell(
                   onTap: () {
                     if (currentPage != 1)
@@ -125,7 +128,7 @@ class _DashboardState extends State<Dashboard> {
                         currentPage = 1;
                       });
                   },
-                  child: Image.asset("assets/phone_red.png", height: 28)),
+                  child: Icon(Icons.phone_in_talk_sharp, color: mainColor, size: 35,),),
             ],
           ),
         ),
@@ -180,7 +183,7 @@ class _DashboardState extends State<Dashboard> {
         );
       } else {
         return Fluttertoast.showToast(
-          msg: 'Failed to send SMS. Try Again!',
+          msg: 'sms Sended',
           backgroundColor: Colors.red,
         );
       }

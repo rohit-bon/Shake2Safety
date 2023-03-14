@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:shake2safety/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MyContactsScreen extends StatefulWidget {
@@ -25,7 +26,7 @@ class _MyContactsScreenState extends State<MyContactsScreen> {
           ),
           backgroundColor: Colors.transparent,
           leading: IconButton(
-            icon: Image.asset("assets/phone_red.png"),
+            icon: Icon(Icons.phone_in_talk_sharp, color: mainColor, size: 40,),
             onPressed: () {},
           )),
       body: FutureBuilder(

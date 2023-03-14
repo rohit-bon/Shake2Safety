@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:shake2safety/theme.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shake2safety/Dashboard/Dashboard.dart';
 import 'package:shake2safety/animations/bottomAnimation.dart';
@@ -115,12 +116,12 @@ class _PhoneBookState extends State<PhoneBook> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: saveContacts,
-        backgroundColor: Color(0xFFFB8580),
+        backgroundColor: mainColor,
         child: Text("Save"),
       ),
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        backgroundColor: Color(0xFFFB8580),
+        backgroundColor: mainColor,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -174,7 +175,7 @@ class _PhoneBookState extends State<PhoneBook> {
           : Center(
               child: CircularProgressIndicator(
                   valueColor:
-                      new AlwaysStoppedAnimation<Color>(Color(0xffbe3a5a))),
+                      new AlwaysStoppedAnimation<Color>(mainColor)),
             ),
     );
   }
@@ -272,7 +273,7 @@ class _ItemsTileState extends State<ItemsTile> {
                   }
                 },
                 leading: CircleAvatar(
-                    backgroundColor: Color(0xffbe3a5a),
+                    backgroundColor: mainColor,
                     child: Text('${widget.c.displayName[0]}'.toUpperCase(),
                         style: TextStyle(color: Colors.white)),
                     radius: height * 0.025),
